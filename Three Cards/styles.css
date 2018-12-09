@@ -1,0 +1,110 @@
+body {
+	font-family: Roboto, sans-serif;
+	background-color: lightblue;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 85%;
+	margin-top: 80px;
+	border-radius: 3px;
+
+}
+
+.device__item {
+	width: 33%;
+	flex-grow: 1;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+}
+
+.device__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 15px;
+	height: 90%;
+}
+
+.device__item:first-child .device__link {
+	margin-left: 15px;
+}
+
+.device__item:nth-child(3) .device__link {
+	margin-right: 15px;
+}
+
+.device__link:hover {
+	background-color: lightgray;
+	border-radius: 3px;
+}
+
+.device__title {
+	text-transform: uppercase;
+	font-weight: 700;
+  color: blue;
+	padding-top: 120px;
+	padding-bottom: 30px;
+	position: relative;
+	letter-spacing: 0.2em;
+}
+.device__title::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.device__title--mobile::before {
+	top: 30px;
+	left: 5px;
+	background-image: url("img/device.svg");
+}
+
+.device__title--desktop::before {
+	top: 30px;
+	left: 20px;
+	background-image: url("img/laptop.svg");
+}
+
+.device__title--tv::before {
+	top: 30px;
+	left: -15px;
+	background-image: url("img/monitor.svg");
+}
+
+.device__text {
+	font-size: 11px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	padding-bottom: 30px;
+	line-height: 20px;
+}
+
+.device__price {
+	padding-bottom: 30px;
+	color: blue;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.device__price--month {
+	font-size: 10px;
+}
